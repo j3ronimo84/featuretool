@@ -1,0 +1,14 @@
+{
+  "name": "socialbakers_feature_suggester",
+  "version": "0.0.0",
+  "main": "index.coffee",
+  "engines": {
+    "node": "0.10.22"
+  },
+  "author": "Techbakers Trainee Program at Socialbakers",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "express.io": "~1.1.13",
+    "grunt-contrib-coffee": "~0.10.1"
+  }
+}

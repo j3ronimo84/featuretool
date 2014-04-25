@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Planning poker</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="socket.io/socket.io.js"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/coffee/app.js"></script>
+	<script src="js/coffee/user.js"></script>
+	<script src="js/coffee/us.js"></script>
+	<script>
+        var login;
+        $(document).ready(function(){
+            var app = new j3r.App();
+            <!--allready login-->
+//            if(window.localStorage.ppUser != null) {
+//                app.logInUser(window.localStorage.ppUser);
+//            }
+            login = function(){
+                var mail = $('#pp_login').val();
+                window.localStorage.ppUser = mail;
+                app.logInUser(mail);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="main-wrapper">
+        <div id="header-wrapper">
+            <span>You are not logged into our amazing app</span>
+        </div>
+        <div id="info-wrapper"></div>
+        <div id="content-wrapper">
+            <div class="component msg-info">
+                <p>Log in with your shemale adress</p>
+                <input id="pp_login" type="text">
+                <button onclick="login()">click hyr</button>
+            </div>
+        </div>
+        <div id="footer-wrapper"></div>
+        <!--<table id="card-table">-->
+            <!--<tr>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+                <!--<td><div class="card-item"><br>1</div></td>-->
+                <!--<td><div class="card-item"><br>2</div></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+                <!--<td><div class="card-item"><br>0</div></td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    </div>
+</body>
+</html>
