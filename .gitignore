@@ -1,2 +1,4 @@
 .idea
+client/dist/js/*
+client/dist/styles/*
 node_modules

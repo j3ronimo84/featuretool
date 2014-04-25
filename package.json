@@ -9,6 +9,8 @@
   "devDependencies": {
     "grunt": "~0.4.4",
     "express.io": "~1.1.13",
-    "grunt-contrib-coffee": "~0.10.1"
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-less": "0.11.0"
   }
 }
